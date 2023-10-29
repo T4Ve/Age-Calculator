@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="bg-blue-950 flex justify-center mt-20">
+    <section class="container flex flex-col justify-center items-start bg-White w-[375px] lg:w-[800px] rounded-t-2xl rounded-bl-2xl rounded-br-[120px] lg:rounded-br-[150px]">
+        <div class="container dates flex justify-center items-center lg:justify-normal gap-6 lg:gap-8 mt-8 lg:mx-12">
+            <div class="date">
+                <p class="nameDate tracking-[3px] uppercase text-SmokeyGrey text-sm lg:text-[12px] my-1">Day</p>
+                <input type="number" placeholder="DD" class="dateInput p-5 w-[90px] lg:w-[150px] h-7 lg:h-14 text-start rounded-lg lg:rounded-md border-2 lg:border-[1px] border-LightGrey lg:text-[32px] accent-Purple cursor-pointer caret-Purple" id="Day">
+                <p class="error font-light text-[12px] text-LightRed"></p>
+            </div>
+            <div class="date">
+                <p class="nameDate tracking-[3px] uppercase text-SmokeyGrey text-sm my-1 lg:text-[12px]">Month</p>
+                <input type="number" placeholder="MM" class="dateInput p-5 w-[90px] lg:w-[150px] h-7 lg:h-14 text-left rounded-lg border-2 lg:border-[1px] border-LightGrey lg:text-[32px] accent-Purple cursor-pointer caret-Purple" id="Month">
+                <p class="error font-light text-[12px] text-LightRed"></p>
+            </div>
+            <div class="date">
+                <p class="nameDate tracking-[3px] uppercase text-SmokeyGrey text-sm my-1 lg:text-[12px]">Year</p>
+                <input type="number" placeholder="YYYY" class="dateInput p-5 w-[90px] lg:w-[150px] h-7 lg:h-14 text-left rounded-lg border-2 lg:border-[1px] border-LightGrey lg:text-[32px] accent-Purple cursor-pointer caret-Purple" id="Year">
+                <p class="error font-extralight text-[12px] text-LightRed"></p>
+            </div>
+        </div>
+        <div class="container flex flex-col justify-center items-center lg:justify-normal mt-14 lg:mt-10 mb-4 lg:mb-0">
+            <div class="border-t-2 lg:border-t-[1px] w-[320px] lg:w-[700px]"></div>
+            <div class="circle flex justify-center bg-Purple rounded-full w-14 h-14 lg:w-[70px] lg:h-[70px] -translate-y-7 lg:-translate-y-9 lg:translate-x-[320px] hover:bg-black transition-colors hover:cursor-pointer">
+                <img src="../img/icon-arrow.svg" class="w-6 lg:w-8 " alt="">
+            </div>
+        </div>
+        <div class="container flex flex-col justify-center items-start text-6xl lg:text-8xl mb-12 px-6 lg:px-12">
+            <p><span class="text-Purple outYears">--</span> years</p>
+            <p><span class="text-Purple outMonths">--</span> months</p>
+            <p><span class="text-Purple outDays">--</span> days</p>
+        </div>
+        
+    </section>
+
+
+<script src="main.js"></script>
+</body>
+
+</html>
