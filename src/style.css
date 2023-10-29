@@ -13,3 +13,8 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
 	-moz-appearance: textfield;
 }
+
+body{
+	background-color: hsl(0, 0%, 94%);
+
+}
